@@ -11,6 +11,7 @@
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:text="@string/Todo_heading"
+            android:textStyle="bold"
             android:paddingTop="10dp"
             android:textSize="20dp"
             android:layout_gravity="center_horizontal"/>
@@ -108,24 +109,24 @@
              
              
             
-     <!--        <LinearLayout
+            <LinearLayout
                 android:id="@+id/LinearLayout_login_forgotpasswordArea"
                 android:orientation="horizontal"
                 android:layout_height="wrap_content"
                 android:layout_width="fill_parent"
                android:gravity="center"
                android:paddingTop="10dp">
-                <Button 
-                   android:id="@+id/ImageButton_Signup"
-                  android:text="@string/login_notmember_lbl"
+                <TextView 
+                  android:text="@string/txt_new_user"
                  android:background="@null"
                   android:layout_width="wrap_content"
                    android:layout_height="wrap_content"
                    android:textSize="15dp"
-                    android:textColor="@android:color/white">
-              </Button>
+                    android:textColor="@android:color/white"
+                    android:layout_marginRight="3dp">
+              </TextView>
                 
-             <TextView
+      <!--        <TextView
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:text=" | "                  
@@ -133,22 +134,24 @@
                     android:textColor="@android:color/white"
                      android:layout_gravity="center_vertical"
                      >
-                 </TextView>
+                 </TextView> -->
                  
             <Button
-                    android:id="@+id/Button_ForgotPassword"
+                    android:id="@+id/btn_Signup"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
-                    android:text="@string/login_forgetpass_label" 
+                    android:text="@string/btn_new_user" 
                      android:textSize="15dp"
-                    android:background="@null"
+                     android:background="@color/btn_new_user"
                     android:textColor="@android:color/white"
                     android:gravity="left"
-                  >
+                    android:paddingLeft="2dp"
+                    android:paddingRight="2dp"
+                    android:layout_marginLeft="3dp">
              </Button>
               
               
-             </LinearLayout> -->
+             </LinearLayout> 
                     
             
             

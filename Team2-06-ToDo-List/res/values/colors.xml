@@ -8,4 +8,6 @@
 <color name="red_star">#FF3030</color>
 <color name="disabled_btn">#F2F3F4</color>
 <color name="clickable_links_new">#32933F</color>
+<color name="btn_new_user">#CB3C2C</color>
+
 </resources>

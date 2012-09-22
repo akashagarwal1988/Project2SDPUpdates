@@ -6,6 +6,7 @@ import java.util.HashMap;
 import android.os.Bundle;
 import android.app.Activity;
 import android.content.Context;
+import android.content.Intent;
 import android.view.LayoutInflater;
 import android.view.Menu;
 import android.view.View;
@@ -56,6 +57,7 @@ public class MainActivity extends Activity {
 	@Override
 	public boolean onCreateOptionsMenu(Menu menu) {
 		getMenuInflater().inflate(R.menu.activity_main, menu);
+		//menu.findItem(R.id.menu_item_new).setIntent(new Intent(MainActivity.this, LoginActivity.class));
 		return true;
 	}
 
@@ -84,10 +86,10 @@ public class MainActivity extends Activity {
 			if (convertView == null) {
 				convertView = mInflater.inflate(R.layout.row_listview, null);
 				holder = new ViewHolder();
-
-
-				holder.txtTodoItem = (TextView) convertView.findViewById(R.id.txt_todo);
-
+				
+				holder.txtTodoItem = (TextView) convertView.findViewById(R.id.txt_list_todo);
+				holder.txtDueDate = (TextView) convertView.findViewById(R.id.txt_list_due_date);
+				
 				convertView.setTag(holder);
 			} else {
 				holder = (ViewHolder) convertView.getTag();
@@ -95,14 +97,16 @@ public class MainActivity extends Activity {
 			
 			String str = ToDoArrayList.get(position).get(KEY_ToDo);
 			holder.txtTodoItem.setText(str);
+			String ster_dae = ToDoArrayList.get(position).get(KEY_DATE);
+			holder.txtDueDate.setText(ster_dae);
 			//i++;
-			return convertView;
+			return convertView; 
 
 		}
 
 		static class ViewHolder {
 			TextView txtTodoItem;
-
+			TextView txtDueDate;
 		}
 	}
 
