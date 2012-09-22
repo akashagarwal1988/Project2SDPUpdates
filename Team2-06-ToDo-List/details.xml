@@ -1,0 +1,99 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:background="@color/green_background"
+    android:orientation="vertical" >
+    
+	
+    <ScrollView
+        android:id="@+id/ScrollViewLogin"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:layout_marginBottom="50dp"
+        android:layout_marginLeft="10dp"
+        android:layout_marginRight="10dp"
+        android:layout_marginTop="10dp"
+        android:background="@android:color/white"
+        android:fadeScrollbars="false"
+        android:isScrollContainer="true"
+        android:scrollbars="vertical" >
+
+        <LinearLayout
+            xmlns:android="http://schemas.android.com/apk/res/android"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:padding="10dp"
+            android:background="@color/blue_row">"
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:paddingTop="4dp"
+                android:text="@string/txt_task"
+                android:textColor="@android:color/black" >
+            </TextView>
+
+            <EditText
+                android:id="@+id/EditText_Task_Hint"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:gravity="left"
+                android:hint="@string/Edit_Task_Name_hint"
+                android:inputType="textPersonName"
+                android:maxLines="1" >
+            </EditText>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:paddingTop="4dp"
+                android:text="@string/Edit_Task"
+                android:textColor="@android:color/black" >
+            </TextView>
+
+            <EditText
+                android:id="@+id/EditText_Tasks_hint"
+                android:layout_width="fill_parent"
+                android:layout_height="100dp"
+                android:gravity="left"
+                android:hint="@string/Edit_Task_hint"
+                android:inputType="textPersonName"
+                android:maxLines="10" >
+            </EditText>
+             
+             <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:paddingTop="4dp"
+                android:text="@string/Due_date"
+                android:textColor="@android:color/black" >
+            </TextView>
+
+            <EditText
+                android:id="@+id/EditText_pass"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:gravity="left"
+                android:hint="@string/Due_date_hint"
+                android:inputType="textPersonName"
+                android:maxLines="1" >
+            </EditText>
+             <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:paddingTop="4dp"
+                android:text="@string/Priority"
+                android:textColor="@android:color/black" >
+            </TextView>
+
+            <Spinner
+    android:id="@+id/planets_spinner"
+    android:layout_width="fill_parent"
+    android:layout_height="wrap_content" />
+            
+        </LinearLayout>
+    </ScrollView>
+</LinearLayout>
